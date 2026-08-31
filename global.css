@@ -10,3 +10,9 @@ table {
 th, td, tr{
     border: 2px solid black;
 }
+
+ul {
+    width: 80%;
+    border: 2px solid black;
+    margin: 10px;
+}
