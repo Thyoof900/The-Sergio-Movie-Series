@@ -48,3 +48,13 @@ ul {
 .subtitle {
     justify-self: center;
 }
+
+#meek {
+    max-width: 300px;
+    max-height: 220px;
+}
+
+h2 {
+    display: flex;
+    justify-self: center;
+}
