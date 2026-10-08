@@ -1,10 +1,37 @@
+/* Colors */
+
+:root {
+  --primary-color: #1D4E89;
+  --secondary-color: #1A787C;
+  --contrast-color: #E8B873;
+  --triadic-color: #A62A61;
+  --extra-color: #F5F2EA;
+}
+
 h1 {
     text-align: center;
+    color: var(--primary-color);
+}
+
+body { 
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #navagation-logo {
     width: 10%;
-    height: 50px;
+    height: 10%;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
