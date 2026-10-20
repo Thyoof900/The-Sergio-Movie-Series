@@ -19,6 +19,7 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -60,17 +61,21 @@ th, td, tr{
 
 ul {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 30%;
+    justify-self: center;
+    width: 50%;
     border: 2px solid green;
-    margin: 10px;
 
+}
+
+li {
+    padding: 10px;
+    padding-right: 15px;
+    justify-content: space-between;
 }
 
 #Geometry {
     display: flex;
-    justify-content: space-between;
+    justify-self: center;
     border-radius: 10px;
     padding: .2%;
     max-height: 500px;
