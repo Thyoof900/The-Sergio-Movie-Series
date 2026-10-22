@@ -24,6 +24,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 #navagation-logo {
@@ -44,6 +45,10 @@ header {
     text-align: center;
 }
 
+.person-header{
+    color: var(--primary-color);
+}
+
 table {
     justify-self: stretch;
     border: 2px solid black;
@@ -60,13 +65,12 @@ th, td, tr{
 }
 
 ul {
-    display: flex;
-    justify-content: center;
+    display: grid;
     justify-content: space-between;
-    grid-template-columns: (1, 4fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 50%;
-    border: 2px solid green;
-
+    border: 2px solid var(--contrast-color);
+    justify-self: center;
 }
 
 li {
@@ -85,7 +89,7 @@ li {
 }
 
 .show {
-    color: pink; 
+    color: var(--triadic-color); 
 }
 
 .subtitle {
