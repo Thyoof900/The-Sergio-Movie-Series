@@ -153,15 +153,7 @@ li {
     color: var(--triadic-color); 
 }
 
-#Geometry {
-    border-radius: 10px;
-    padding: .2%;
-
-    max-height: 75dvh;
-    max-width: 75dvh;
-}
-
-#meek {
+.photos {
     max-width: 25dvh;
     max-height: 25dvh;
 
@@ -176,17 +168,19 @@ li {
 /* Right Aside Tab Section */
 
 .site-aside-right {
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 80%;
     justify-self: center;
-    width: auto;
     margin: 0 auto;
 }
 
 table {
     border: 2px solid black;
-    border-collapse: collapse;
+    border-radius: 10px;
 
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    justify-self: center;
 }
 
 th, td, tr{
@@ -195,13 +189,25 @@ th, td, tr{
 
     margin: 5px;
     text-align: center;
+    border-radius: 5px;
 }
 
 /* Left Aside Section */
 
 .site-aside-left {
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 80%;
     justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+#maps {
+    border-radius: 10px;
+    max-height: 50dvh;
+    max-width: 50dvh;
 }
 
 /* Footer Section */
@@ -210,6 +216,10 @@ th, td, tr{
     background-color: var(--primary-color);
     color: var(--extra-color);
     padding: 15px 15px;
+}
+
+.footer-header {
+    font-size: 25px;
 }
 
 /* Footer Links */
@@ -226,10 +236,19 @@ th, td, tr{
 
 /* Media Queries */
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
     #person-card-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-} */
+
+    /* .page {
+        grid-template-areas: 
+        .site-header
+        site-a main .site-left;
+        .site-footer .site-footer .site-footer
+    } */
+
+    
+}
