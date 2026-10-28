@@ -1,4 +1,4 @@
-/* Colors */
+/* HTML Colors and Home Page */
 
 :root {
   --primary-color: #1D4E89;
@@ -8,7 +8,20 @@
   --extra-color: #F5F2EA;
 }
 
-/* Body Styling */
+
+.page {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "aside-left"
+    "aside-right"
+    "footer";
+}
+
+/* HTML & Body Styling */
 
 body {
     margin: 0;
@@ -21,7 +34,8 @@ body {
 
 /* Navagation Styles */
 
-nav {
+.site-navigation {
+    grid-area: nav;
     width: 100%;
     margin: 0px;
 
@@ -37,8 +51,8 @@ nav {
 /* Links Decoration */
 
 #navigation-logo {
-    width: 10%;
-    height: 10%;
+    width: 25dvh;
+    height: 20dvh;
 }
 
 .navigation-header {
@@ -84,6 +98,7 @@ nav {
 /* Header Section */
 
 .site-header {
+    grid-area: header;
     text-align: center;
 }
 
@@ -99,6 +114,7 @@ nav {
 /* Main Section */
 
 main {
+    grid-area: main;
     text-align: center;
     justify-self: center;
 }
@@ -160,19 +176,16 @@ li {
     border-radius: 10px;
 }
 
-#san-diego-logo {
-    width: 7.5rem;
-    height: 7.5rem;
-}
-
 /* Right Aside Tab Section */
 
 .site-aside-right {
+    grid-area: aside-right;
     border: 2px solid gray;
     border-radius: 20px;
-    width: 80%;
+    width: 95%;
     justify-self: center;
-    margin: 0 auto;
+    margin: 10px 15px;
+    text-align: center;
 }
 
 table {
@@ -195,24 +208,25 @@ th, td, tr{
 /* Left Aside Section */
 
 .site-aside-left {
+    grid-area: aside-left;
     border: 2px solid gray;
     border-radius: 20px;
-    width: 80%;
+    width: 95%;
     justify-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 15px;
     text-align: center;
 }
 
-#maps {
+.maps {
     border-radius: 10px;
-    max-height: 50dvh;
-    max-width: 50dvh;
+    height: auto;
+    width: auto;
 }
 
 /* Footer Section */
 
 .site-footer {
+    grid-area: footer;
     background-color: var(--primary-color);
     color: var(--extra-color);
     padding: 15px 15px;
@@ -243,12 +257,14 @@ th, td, tr{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* .page {
-        grid-template-areas: 
-        .site-header
-        site-a main .site-left;
-        .site-footer .site-footer .site-footer
-    } */
+    .page {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "aside-left main aside-right"
+        "footer footer footer";
+    }
 
     
 }
