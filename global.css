@@ -51,14 +51,17 @@ body {
 /* Links Decoration */
 
 #navigation-logo {
-    width: 25dvh;
-    height: 20dvh;
+    width: 15dvh;
+    height: 10dvh;
+    border-radius: 10px;
 }
 
 .navigation-header {
     margin-right: auto;
     padding: 10px;
     color: var(--extra-color);
+    text-shadow: var(--triadic-color) 5px 5px 5px;
+    font-size: 1.5rem;
 }
 
 .navigation-links-container{
@@ -100,15 +103,20 @@ body {
 .site-header {
     grid-area: header;
     text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 80%;
+    background-color: var(--primary-color);
+    margin: 10px auto;
 }
 
 #main-header {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--extra-color);
 }
 
 .subtitle {
-    justify-self: center;
+    color: var(--extra-color);
 }
 
 /* Main Section */
@@ -117,6 +125,10 @@ main {
     grid-area: main;
     text-align: center;
     justify-self: center;
+}
+
+#person-card-container2 {
+    grid-template-columns: 1fr 2fr;
 }
 
 .person-card {
@@ -192,8 +204,7 @@ table {
     border: 2px solid black;
     border-radius: 10px;
 
-    margin: 10px;
-    justify-self: center;
+    margin: 10px auto;
 }
 
 th, td, tr{
@@ -252,7 +263,7 @@ th, td, tr{
 
 @media (min-width: 1024px) {
 
-    #person-card-container{
+    #person-card-container1{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
