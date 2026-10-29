@@ -94,7 +94,7 @@ body {
 }
 
 .navigation-links:active{
-    transition: color .3s, transform .3s;
+    transition: color .2s, transform .2s;
     color: var(--triadic-color);
 }
 
@@ -119,7 +119,7 @@ body {
     color: var(--extra-color);
 }
 
-/* Main Section */
+/* Main Styling */
 
 main {
     grid-area: main;
@@ -127,18 +127,26 @@ main {
     justify-self: center;
 }
 
+/* Person Card Styling */
+
 #person-card-container2 {
-    grid-template-columns: 1fr 2fr;
+    margin: 0;
 }
 
 .person-card {
     border: 2px solid gray;
     border-radius: 20px;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: box-shadow .5s ease;
+}
+
+.person-card:hover {
+    box-shadow: var(--contrast-color) 5px 5px 5px 5px;
+    transition: box-shadow .5s ease;
 }
 
 #introduction-stage {
@@ -154,8 +162,6 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 ul {
     display: flex;
@@ -266,6 +272,12 @@ th, td, tr{
     #person-card-container1{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #person-card-container2{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 0;
     }
 
     .page {
