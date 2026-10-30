@@ -276,8 +276,8 @@ th, td, tr{
 
     #person-card-container2{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        margin: 0;
+        grid-template-columns: 3fr 4fr;
+        width: 120dvh;
     }
 
     .page {
